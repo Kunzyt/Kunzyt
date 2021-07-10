@@ -75,14 +75,13 @@ def dos2():
 
 
 def usage():
-	print (''' \033[92m	Hammer Dos Script v.1 http://www.canyalcin.com/
-	It is the end user's responsibility to obey all applicable laws.
-	It is just for server testing script. Your ip is visible. \n
-	usage : python3 hammer.py [-s] [-p] [-t]
-	-h : help
-	-s : server ip
-	-p : port default 80
-	-t : turbo default 135 \033[0m''')
+	print (''' \033[92m Tools Được Viết Bởi Nguyễn Hoàng Ân
+Để bắt đầu chạy tools bạn cần viết lệnh như thế này,
+Ví dụ : mình muốn đánh sập web này 
+Ví dụ : http://thcslongthoi.sgdtravinh.edu.vn/
+Thì cáAac bạn bỏ cho mình dòng https nha các bạn
+Các bạn cần nhập như thế này để đánh sập web
+>>> python3 hammer.py -s thcslongthoi.sgdtravinh.edu.vn	[0m''')
 	sys.exit()
 
 
