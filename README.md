@@ -1,2 +1,2 @@
-1. How to use Hammer [`Watch it`](http://www.youtube.com/watch?v=HVbRUhX2EPo) 
-2. Fork it...
+Lưu ý toola được viết bởi Nguyễn Hoàng Ân
+Một ngày nào đó nó sẽ ở trong quá khứ của tôi tôi hy vọng sao này vẫn tìm thấy nó
